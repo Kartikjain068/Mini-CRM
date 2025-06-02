@@ -1,0 +1,45 @@
+/* components/CustomerTimeline.css */
+.timeline-container {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  border-left: 3px solid #ccc;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -0.65rem;
+  top: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.status.SENT {
+  color: green;
+}
+
+.status.FAILED {
+  color: red;
+}
+
+.timestamp {
+  font-size: 0.85rem;
+  color: #777;
+}
